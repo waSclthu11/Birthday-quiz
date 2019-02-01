@@ -51,7 +51,7 @@ yearquestion = "And what year were you born in, {0}? "
 year = (int(input(yearquestion.format(name))))
 day = int(input("And the day?"))
 currentyear = datetime.today().year
-print(currentyear)
+currentyear = int(currentyear)
 if (month == "June" or "june" or "July" or 'july' or 'august' or 'August'):
     season="Summer"
 elif (month == 'September' or 'september' or 'October' or 'october' or 'November' or 'november'):
@@ -68,6 +68,6 @@ elif (year>=1980 and year<=1989):
     age="eighties"
 elif (year >= 1990 and year <=1999):
     age="nineties"
-elif (year >=2000 and <= currentyear):
+elif (year >=2000 and <=currentyear):
     age="two thousands"
 #print(name +", you are a" + season + "baby of the" + age + ".")

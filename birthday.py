@@ -68,6 +68,6 @@ elif (year>=1980 and year<=1989):
     age="eighties"
 elif (year >= 1990 and year <=1999):
     age="nineties"
-#elif (year >=2000 and <= currentyear):
-    #age="two thousands"
+elif (year >=2000 and <= currentyear):
+    age="two thousands"
 #print(name +", you are a" + season + "baby of the" + age + ".")

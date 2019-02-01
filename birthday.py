@@ -48,7 +48,7 @@ name = str(input("Hello, what is your name? "))
 monthquestion = "Hello {0}, what was the name of the month you were born ? "
 month = str(input(monthquestion.format(name)))
 yearquestion = "And what year were you born in, {0}? "
-year = int(input(yearquestion.format(name)))
+year = (int(input(yearquestion.format(name))))
 day = int(input("And the day?"))
 currentyear = datetime.today().year
 print(currentyear)

@@ -49,9 +49,10 @@ monthquestion = "Hello {0}, what was the name of the month you were born ? "
 month = str(input(monthquestion.format(name)))
 yearquestion = "And what year were you born in, {0}? "
 year = (int(input(yearquestion.format(name))))
-day = int(input("And the day?"))
+day = int(input("And the day? "))
 currentyear = datetime.today().year
 currentyear = int(currentyear)
+print (month)
 if (month == "June" or "june" or "July" or 'july' or 'august' or 'August'):
     season="Summer"
 elif (month == 'September' or 'september' or 'October' or 'october' or 'November' or 'november'):
@@ -63,14 +64,19 @@ elif (month == March or march or April or april or May or may):
 if (todaydate == day):
     print("Happy Birthday!")
 if (todaydate > day or todaydate < day):
-    if (year < 1980):
-        age="Stone Age"
-    elif (year>=1980 and year<=1989):
-        age="eighties"
-    elif (year >= 1990 and year <=1999):
-        age="nineties"
-    elif (year >=2000 and year <=currentyear):
-        age="two thousands"
-    elif (year > currentyear):
-        age="The Future"
-    print( name +", you are a " + season + " baby of the " + age + ".")
+    if (day == 31 and month == 'October' or 'october'):
+        print ("You were born on Halloween!")
+    else:
+        if (year < 1980):
+            age="Stone Age"
+        elif (year>=1980 and year<=1989):
+            age="eighties"
+        elif (year >= 1990 and year <=1999):
+            age="nineties"
+        elif (year >=2000 and year <=currentyear):
+            age="two thousands"
+        elif (year > currentyear):
+            age="The Future"
+        print( name +", you are a " + season + " baby of the " + age + ".")
+
+   

@@ -60,8 +60,8 @@ elif (month == 'December' or 'december' or 'January' or 'january' or 'February' 
     season="Winter"
 elif (month == March or march or April or april or May or may):
     season="Spring"
-else:
-    print("You managed to spell something wrong and I'm incredibly dissapointed in you")
+if (todaydate == day):
+    print("Happy Birthday!")
 if (year < 1980):
     age="Stone Age"
 elif (year>=1980 and year<=1989):
@@ -72,4 +72,4 @@ elif (year >=2000 and year <=currentyear):
     age="two thousands"
 elif (year > currentyear):
     age="The Future"
-print(name +", you are a " + season + " baby of the " + age + ".")
+print( name +", you are a " + season + " baby of the " + age + ".")

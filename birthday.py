@@ -70,4 +70,6 @@ elif (year >= 1990 and year <=1999):
     age="nineties"
 elif (year >=2000 and year <=currentyear):
     age="two thousands"
+elif (year > currentyear):
+    age="The Future"
 print(name +", you are a " + season + " baby of the " + age + ".")

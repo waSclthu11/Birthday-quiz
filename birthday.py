@@ -75,6 +75,7 @@ if (todaydate == day):
 if (todaydate > day or todaydate < day):
     if (day == 31 and (month == 'October' or month == 'october')):
         print ("You were born on Halloween!")
-print( name +", you are a " + season + " baby of the " + age + ".")
+if (todaydate > day or todaydate < day):
+    print( name +", you are a " + season + " baby of the " + age + ".")
 
    

@@ -61,22 +61,21 @@ elif (month == 'December' or 'december' or 'January' or 'january' or 'February' 
     season="Winter"
 elif (month == March or march or April or april or May or may):
     season="Spring"
+if (year < 1980):
+    age="Stone Age"
+elif (year>=1980 and year<=1989):
+    age="eighties"
+elif (year >= 1990 and year <=1999):
+    age="nineties"
+elif (year >=2000 and year <=currentyear):
+    age="two thousands"
+elif (year > currentyear):
+    age="The Future"
 if (todaydate == day):
     print("Happy Birthday!")
 if (todaydate > day or todaydate < day):
     if (day == 31 and month == 'October' or 'october'):
         print ("You were born on Halloween!")
-    else:
-        if (year < 1980):
-            age="Stone Age"
-        elif (year>=1980 and year<=1989):
-            age="eighties"
-        elif (year >= 1990 and year <=1999):
-            age="nineties"
-        elif (year >=2000 and year <=currentyear):
-            age="two thousands"
-        elif (year > currentyear):
-            age="The Future"
-        print( name +", you are a " + season + " baby of the " + age + ".")
+print( name +", you are a " + season + " baby of the " + age + ".")
 
    

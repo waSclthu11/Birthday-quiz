@@ -52,7 +52,6 @@ year = (int(input(yearquestion.format(name))))
 day = int(input("And the day? "))
 currentyear = datetime.today().year
 currentyear = int(currentyear)
-print (month)
 if (month == "June" or "june" or "July" or 'july' or 'august' or 'August'):
     season="Summer"
 elif (month == 'September' or 'september' or 'October' or 'october' or 'November' or 'november'):

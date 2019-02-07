@@ -53,15 +53,15 @@ day = int(input("And the day? "))
 currentyear = datetime.today().year
 currentyear = int(currentyear)
 if (month == "June" or "june" or "July" or 'july' or 'august' or 'August'):
-    season="Summer"
+    season="summer"
 if (month == 'September' or 'september' or 'October' or 'october' or 'November' or 'november'):
-    season="Fall"
+    season="fall"
 if (month == 'December' or 'december' or 'January' or 'january' or 'February' or 'february'):
-    season="Winter"
+    season="winter"
 if (month == 'March' or 'march' or 'April' or 'april' or 'May' or 'may'):
-    season="Spring"
+    season="spring"
 if (year < 1980):
-    age="Stone Age"
+    age="stone Age"
 elif (year>=1980 and year<=1989):
     age="eighties"
 elif (year >= 1990 and year <=1999):

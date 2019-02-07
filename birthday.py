@@ -71,7 +71,7 @@ elif (year >=2000 and year <=currentyear):
 elif (year > currentyear):
     age="The Future"
 if (todaydate == day):
-    print("Happy Birthday!")
+    print("Happy birthday!")
 if (todaydate > day or todaydate < day):
     if (day == 31 and (month == 'October' or month == 'october')):
         print ("You were born on Halloween!")

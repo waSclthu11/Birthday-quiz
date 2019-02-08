@@ -55,15 +55,15 @@ currentyear = datetime.today().year
 currentyear = int(currentyear)
 if (month == 'June' or 'june' or 'July' or 'july' or 'august' or 'August'):
     season='summer'
-    else:
-        if (month == 'September' or 'september' or 'October' or 'october' or 'November' or 'november'):
-            season="fall"
+else:
+    if (month == 'September' or 'september' or 'October' or 'october' or 'November' or 'november'):
+        season="fall"
+        else:
+            if (month == 'December' or 'december' or 'January' or 'january' or 'February' or 'february'):
+                season="winter"
             else:
-                if (month == 'December' or 'december' or 'January' or 'january' or 'February' or 'february'):
-                    season="winter"
-                else:
-                    if (month == 'March' or 'march' or 'April' or 'april' or 'May' or 'may'):
-                        season="spring"
+                if (month == 'March' or 'march' or 'April' or 'april' or 'May' or 'may'):
+                    season="spring"
 if (year < 1980):
     age="stone Age"
 else:

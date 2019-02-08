@@ -53,13 +53,13 @@ year = (int(input(yearquestion.format(name))))
 day = int(input("And the day? "))
 currentyear = datetime.today().year
 currentyear = int(currentyear)
-if (month == 'June' or 'june' or 'July' or 'july' or 'august' or 'August'):
-    season='summer'
-elif (month == 'September' or 'september' or 'October' or 'october' or 'November' or 'november'):
+if month == ('June' or 'june' or 'July' or 'july' or 'august' or 'August'):
+    season="summer"
+if (month == 'September' or 'september' or 'October' or 'october' or 'November' or 'november'):
     season="fall"
-elif (month == 'December' or 'december' or 'January' or 'january' or 'February' or 'february'):
+if (month == 'December' or 'december' or 'January' or 'january' or 'February' or 'february'):
     season="winter"
-elif (month == 'March' or 'march' or 'April' or 'april' or 'May' or 'may'):
+if (month == 'March' or 'march' or 'April' or 'april' or 'May' or 'may'):
     season="spring"
 if (year < 1980):
     age="stone Age"

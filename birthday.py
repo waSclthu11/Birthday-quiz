@@ -47,35 +47,43 @@ month = month_name[todaymonth]
 name = str(input("Hello, what is your name? "))
 monthquestion = "Hi {0}, what was the name of the month you were born in? "
 month = str(input(monthquestion.format(name)))
+month=month
 yearquestion = "And what year were you born in, {0}? "
 year = (int(input(yearquestion.format(name))))
 day = int(input("And the day? "))
 currentyear = datetime.today().year
 currentyear = int(currentyear)
-if (month == "June" or "june" or "July" or 'july' or 'august' or 'August'):
-    season="summer"
-if (month == 'September' or 'september' or 'October' or 'october' or 'November' or 'november'):
-    season="fall"
-if (month == 'December' or 'december' or 'January' or 'january' or 'February' or 'february'):
-    season="winter"
-if (month == 'March' or 'march' or 'April' or 'april' or 'May' or 'may'):
-    season="spring"
+if (month == 'June' or 'june' or 'July' or 'july' or 'august' or 'August'):
+    season='summer'
+    else:
+        if (month == 'September' or 'september' or 'October' or 'october' or 'November' or 'november'):
+            season="fall"
+            else:
+                if (month == 'December' or 'december' or 'January' or 'january' or 'February' or 'february'):
+                    season="winter"
+                else:
+                    if (month == 'March' or 'march' or 'April' or 'april' or 'May' or 'may'):
+                        season="spring"
 if (year < 1980):
     age="stone Age"
-elif (year>=1980 and year<=1989):
-    age="eighties"
-elif (year >= 1990 and year <=1999):
-    age="nineties"
-elif (year >=2000 and year <=currentyear):
-    age="two thousands"
-elif (year > currentyear):
-    age="The Future"
+else:
+    if (year>=1980 and year<=1989):
+        age="eighties"
+    else:
+        if (year >= 1990 and year <=1999):
+            age="nineties"
+        else:
+            if (year >=2000 and year <=currentyear):
+                age="two thousands"
+            else:
+                if (year > currentyear):
+                    age="The Future"
 if (todaydate == day):
     print("Happy birthday!")
-if (todaydate > day or todaydate < day):
+elif (todaydate > day or todaydate < day):
     if (day == 31 and (month == 'October' or month == 'october')):
         print ("You were born on Halloween!")
     else: 
-        print( name +", you are a " + season + " baby of the " + age + ".")
+        print( name +", you are a {0} baby of the ".format(season) + age + ".")
 
    

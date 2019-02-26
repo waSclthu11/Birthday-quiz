@@ -62,7 +62,7 @@ if (month == 'December' or 'december' or 'January' or 'january' or 'February' or
 if (month == 'March' or 'march' or 'April' or 'april' or 'May' or 'may'):
     season="spring"
 if (year < 1980):
-    age="stone Age"
+    age="Stone Age"
 else:
     if (year>=1980 and year<=1989):
         age="eighties"
